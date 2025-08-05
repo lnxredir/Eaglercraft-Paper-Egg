@@ -1,0 +1,32 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2025-08-05T16:47:06+00:00",
+    "name": "Eaglercraft Paper Universal",
+    "author": "noreply@example.com",
+    "description": "Universal Eaglercraft server (1.5, 1.8, 1.12) using Paper 1.12.2, based on EaglercraftXServer, EaglercraftXRewind, ViaVersion, SkinsRestorer, and AuthMeReloaded.",
+    "features": [],
+    "docker_images": {
+        "Java 21": "ghcr.io\/pterodactyl\/yolks:java_21",
+        "Java 17": "ghcr.io\/pterodactyl\/yolks:java_17"
+    },
+    "file_denylist": [],
+    "startup": "java -Xmx2G -Xms2G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dcom.mojang.eula.agree=true -jar paper-1.12.2.jar",
+    "config": {
+        "files": "{\r\n    \"server.properties\": {\r\n        \"parser\": \"properties\",\r\n        \"find\": {\r\n            \"server-ip\": \"0.0.0.0\",\r\n            \"server-port\": \"{{server.build.default.port}}\",\r\n            \"query.port\": \"{{server.build.default.port}}\",\r\n            \"view-distance\": \"6\",\r\n            \"online-mode\": \"false\",\r\n            \"motd\": \"Eaglercraft!\",\r\n            \"max-players\": \"50\"\r\n        }\r\n    }\r\n}",
+        "startup": "{\r\n    \"done\": \")! For help, type \"\r\n}",
+        "logs": "{}",
+        "stop": "stop"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/ash\r\n# Vanilla MC Installation Script\r\n#\r\n# Server Files: \/mnt\/server\r\n#apk add git\r\nmkdir -p \/mnt\/server\r\ncd \/mnt\/server\r\n\r\nGIT_REPO=https:\/\/github.com\/lnxredir\/Eaglercraft-Paper-Egg.git\r\n\r\necho -e \"running: git clone $GIT_REPO\"\r\ngit clone $GIT_REPO .\r\n\r\necho -e \"Install Complete\"",
+            "container": "wcp1\/alpine_curl",
+            "entrypoint": "ash"
+        }
+    },
+    "variables": []
+}
