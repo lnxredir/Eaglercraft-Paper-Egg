@@ -6,5 +6,3 @@ A Pterodactyl EGG for "Universal Eaglercraft server (1.5, 1.8, 1.12) using Paper
 
 Download the **egg-eaglercraft-paper-universal.json** and import it to your Pelican/Pyrodactyl/Pterodactyl/ETC panel and it should work first try.
 On the Eaglercraft client, just add a new server with wss://*your-ip:port*.
-
-You can also download the EaglerMOTD plugin to animate your server's MOTD, and the EaglerWeb plugin to host a website from your server, both of which are available here [https://github.com/lax1dude/eaglerxserver/releases](https://github.com/lax1dude/eaglerxserver/releases)
