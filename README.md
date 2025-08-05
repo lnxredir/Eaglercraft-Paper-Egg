@@ -1,10 +1,10 @@
-## Eaglercraft-Server-Paper
+## Eaglercraft-Server-Paper Pelican EGG
 
-Universal Eaglercraft server (1.5, 1.8, 1.12) using Paper 1.12.2
+A Pelican EGG for "Universal Eaglercraft server (1.5, 1.8, 1.12) using Paper 1.12.2"
+*Forked from https://github.com/Eaglercraft-Templates/Eaglercraft-Server-Paper*
 
-Use the `run.bat` file to run on Windows, or `run.sh` to run on macOS or Linux. The server uses port 25565 for both Vanilla and Eaglercraft players.
-
-Based on EaglercraftXServer, EaglercraftXRewind, ViaVersion, SkinsRestorer, and AuthMeReloaded.
+Download the **egg-eaglercraft-paper-universal.json** and import it to your Pelican/Pyrodactyl/Pterodactyl/ETC panel and it should work first try.
+On the Eaglercraft client, just add a new server with wss://*your-ip:port*.
 
 You can also download the EaglerMOTD plugin to animate your server's MOTD, and the EaglerWeb plugin to host a website from your server, both of which are available here [https://github.com/lax1dude/eaglerxserver/releases](https://github.com/lax1dude/eaglerxserver/releases)
 
